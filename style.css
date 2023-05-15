@@ -1,21 +1,51 @@
+:root {
+    /* #region VARIABLES */
+
+    --accent-color: #000000;
+
+    /* #region HERO-RADIUS */
+    --hero-radius-outer: rgb(11, 40, 64);
+    --hero-radius-mid: rgba(26, 60, 90, 1);
+    --hero-radius-inner: rgba(41, 76, 104, 1);
+    /* #endregion */
+
+    /* #endregion */
+}
+
+:root,
+html,
 body {
     height: 100%;
+    width: 100%;
 }
 
 section {
-    height: 600px;
+    height: 45rem;
+}
+
+.nav {
+    background-color: rgb(92, 92, 92);
+    border-radius: 7px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.active-nav {
+    background-color: black;
 }
 
 .hero {
     background: radial-gradient(circle at 76% 28%,
-            rgba(41, 76, 104, 1),
-            rgba(26, 60, 90, 1),
-            rgb(11, 40, 64));
+            var(--hero-radius-inner),
+            var(--hero-radius-mid),
+            var(--hero-radius-outer));
 }
 
 .section-2 {
-    background-color: #F6B51D;
-    height: 500px;
+    background-color: var(--wave-1-color);
+    transform: translate(0, -9.2rem);
 }
 
 .bg-transparent {
@@ -24,8 +54,12 @@ section {
     background-image: none !important;
 }
 
-/* #region WAVE SEPERATOR */
-.orange-wave-div {
+.wave-divider-1 {
+    transform: translate(0, -10%);
+    width: 100%;
+}
+
+/* .orange-wave-div {
     width: 100%;
     overflow: hidden;
     line-height: 0;
@@ -36,11 +70,11 @@ section {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 135px;
+    height: 8.4rem;
 }
 
 .orange-wave-div .shape-fill {
-    fill: #F6B51D;
-}
+    fill: var(--wave-1-color);
+} */
 
 /* #endregion */
