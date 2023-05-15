@@ -1,7 +1,7 @@
 :root {
     /* #region VARIABLES */
 
-    --accent-color: #000000;
+    --accent-color: #2e63d5;
 
     /* #region HERO-RADIUS */
     --hero-radius-outer: rgb(11, 40, 64);
@@ -25,7 +25,7 @@ section {
 
 /* #region NAV */
 .nav {
-    background-color: rgb(92, 92, 92);
+    /* background-color: rgb(92, 92, 92); */
     border-radius: 7px;
     padding: 0px !important;
 }
@@ -36,12 +36,21 @@ section {
     color: white !important;
 }
 
-.active-nav {
+.inactive-nav {
     background-color: black;
+    border: 1px solid rgb(109, 109, 109);
+    box-shadow: 3px 5px 0px 0px rgb(0, 0, 0);
+}
+
+.active-nav {
+    background-color: var(--accent-color);
+    border: 1px solid white;
+    box-shadow: 3px 5px 0px 0px white;
 }
 
 .inactive-nav:hover {
-    background-color: rgb(57, 57, 57)
+    background-color: rgb(43, 43, 43);
+    box-shadow: 3px 5px 0px 0px white;
 }
 
 /* #endregion */
