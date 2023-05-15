@@ -23,18 +23,29 @@ section {
     height: 45rem;
 }
 
+/* #region NAV */
 .nav {
     background-color: rgb(92, 92, 92);
     border-radius: 7px;
+    padding: 0px !important;
 }
 
-.nav-link {
-    color: white;
+.nav-link,
+.nav-link:hover,
+.nav-link:active {
+    color: white !important;
 }
 
 .active-nav {
     background-color: black;
 }
+
+.inactive-nav:hover {
+    background-color: rgb(57, 57, 57)
+}
+
+/* #endregion */
+
 
 .hero {
     background: radial-gradient(circle at 76% 28%,
